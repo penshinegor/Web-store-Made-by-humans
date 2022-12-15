@@ -1,0 +1,460 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya SC', serif;
+}
+
+.main {
+
+    background-image: url("/assets/images/firstBackground.png");
+    padding: 108px 0;
+
+    &__container {
+        width: 1334px;
+        margin: 0 auto;
+        background: rgba(221, 221, 221, 0.3);
+        box-shadow: -20px -20px 40px rgba(0, 0, 0, 0.1), 20px 20px 40px rgba(0, 0, 0, 0.15), inset 10px 10px 20px rgba(255, 255, 255, 0.5), inset -10px -10px 20px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+        border-radius: 35px;
+    }
+
+    &__header {
+        background: #FFFFFF;
+        border-radius: 35px 35px 0px 0px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        padding: 50px;
+    }
+}
+
+.header {
+    
+    &__title {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.25em;
+        letter-spacing: 0.2em;
+    }
+
+    &__bag {
+        width: 23px;
+    }
+}
+
+.wrapper {
+
+    &__flex {
+        display: flex;
+        gap: 140px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__year {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.25em;
+        letter-spacing: 0.05em;
+    }
+
+    &__title {
+        text-align: right;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(150, 171, 177, 0) 100%);
+    }
+
+    &__button {
+        max-width: 50px;
+        margin: 0 auto;
+    }
+
+    &__card-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__bottom {
+        margin-top: 23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.card {
+
+    &__image:hover {
+        transform: scale(1.08);
+    }
+
+    &__image {
+        width: 247px;
+        transition: transform 0.5s;
+        box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+    }
+
+    &__text {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.25em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.bottom {
+    
+    &__slider {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+    }
+}
+
+.slider {
+
+    &__span {
+        font-size: 20px;
+    }
+    &__span:nth-child(4) {
+        color: #FFFFFF;
+    }
+
+}
+
+.language {
+
+    &__info {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+
+    &__text{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.info {
+    background-image: url("/assets/images/secondBackground.png");
+    padding: 100px 0;
+
+    &__new {
+        width: 1107px;
+        margin: 0 auto 43px auto;
+    }
+
+    &__discount {
+        width: 1107px;
+        margin: 0 auto 43px auto;
+        display: flex;
+
+    }
+
+    &__company {
+        width: 1107px;
+        margin: 0 auto;
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+}
+
+.new {
+
+    &__title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;  
+        margin-bottom: 38px;
+    }
+
+    &__card-list {
+        display: flex;
+        gap: 38px;
+    }
+}
+
+.form {
+
+    width: 665px;
+    height: 273px;
+    background: #FFFFFF;
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px 0px 0px 20px;
+    padding: 73px 121px 110px 65px;
+    display: flex;
+    align-items: flex-end;
+    gap: 19px;
+    
+
+    &__label {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__input {
+        width: 410px;
+        height: 31px;
+        outline: none;
+        border: none; 
+        border-bottom: 2px solid rgba(0, 0, 0, 0.28);  
+
+        font-family: 'Alegreya SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+    }
+
+    &__input::placeholder {
+        font-family: 'Alegreya SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        color: rgba(0, 0, 0, 0.51);
+    }
+
+    &__image {
+        width: 445px;
+    }
+
+    &__button {
+        height: 50px;
+    }
+}
+
+.company {
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__orders {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+    }
+}
+.order {
+    width: 135px;
+}
+.order:nth-child(1) {
+    width: 83px;
+}
+.order:nth-child(3) {
+    width: 120px;
+}
+.orders {
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 200%;
+        letter-spacing: 0.05em;
+    }
+
+    &__numb {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 68px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+
+.footer {
+
+    padding: 108px 0;
+    color: #fff;
+    background: #525252;
+
+    &__container {
+        width: 1107px;
+        margin: 0 auto;
+        display: flex;
+        gap: 105px;
+        align-items: center;
+    }
+}
+
+.container {
+    
+    &__page {
+        display: flex;
+        gap: 146px;
+        align-items: center;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 83px;
+    }
+}
+
+.list {
+    display: flex;
+    gap: 90px;
+
+    &__wrap:nth-child(1) {
+        width: 99px;
+    }
+}
+
+.wrap {
+    
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+}
+
+.contacts {
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: right;
+    }
+}
+
+.info {
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: right;
+    }
+
+    &__phone {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__tel {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+    }
+
+    &__zsu {
+        padding: 10px 0;
+    }
+
+    &__help {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+    }
+}
+
+.link {
+    
+    &__image {
+        height: 22px;
+    }
+}
+
